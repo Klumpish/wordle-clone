@@ -46,17 +46,18 @@ function App() {
 		for (let i = 0; i < 5; i++) {
 			currWord += board[currAttempt.attempt][i];
 		}
-		if (wordSet.has(currWord.toLocaleLowerCase())) {
+		currWord = currWord.toLowerCase();
+		if (wordSet.has(currWord)) {
 			setCurrAttempt({ attempt: currAttempt.attempt + 1, letterPos: 0 });
 		} else {
 			alert("word not found");
-		}
-
-		if (currWord === correctWord) {
-			setGameOver({ gameOver: true, guessedWord: true });
 			return;
 		}
-		if (currAttempt.attempt === 5) {
+
+		if (currWord === correctWord.toLowerCase()) {
+			setGameOver({ gameOver: true, guessedWord: true });
+			return;
+		} else if (currAttempt.attempt === 5) {
 			setGameOver({ gameOver: true, guessedWord: false });
 		}
 	};
