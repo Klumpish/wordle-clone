@@ -63,13 +63,16 @@ nav h1 {
 }
 
 /* guessing colors */
-#correct {
+#correct,
+.green {
 	background-color: #528d4e;
 }
-#almost {
+#almost,
+.yellow {
 	background-color: #b49f39;
 }
-#error {
+#error,
+.grey {
 	background-color: #3a393c;
 }
 /*  */

@@ -1,11 +1,47 @@
 import wordBank from "./Wordle-bank.txt";
 export const boardDefault = [
-	["", "", "", "", ""],
-	["", "", "", "", ""],
-	["", "", "", "", ""],
-	["", "", "", "", ""],
-	["", "", "", "", ""],
-	["", "", "", "", ""],
+	[
+		{ letter: "", color: "" },
+		{ letter: "", color: "" },
+		{ letter: "", color: "" },
+		{ letter: "", color: "" },
+		{ letter: "", color: "" },
+	],
+	[
+		{ letter: "", color: "" },
+		{ letter: "", color: "" },
+		{ letter: "", color: "" },
+		{ letter: "", color: "" },
+		{ letter: "", color: "" },
+	],
+	[
+		{ letter: "", color: "" },
+		{ letter: "", color: "" },
+		{ letter: "", color: "" },
+		{ letter: "", color: "" },
+		{ letter: "", color: "" },
+	],
+	[
+		{ letter: "", color: "" },
+		{ letter: "", color: "" },
+		{ letter: "", color: "" },
+		{ letter: "", color: "" },
+		{ letter: "", color: "" },
+	],
+	[
+		{ letter: "", color: "" },
+		{ letter: "", color: "" },
+		{ letter: "", color: "" },
+		{ letter: "", color: "" },
+		{ letter: "", color: "" },
+	],
+	[
+		{ letter: "", color: "" },
+		{ letter: "", color: "" },
+		{ letter: "", color: "" },
+		{ letter: "", color: "" },
+		{ letter: "", color: "" },
+	],
 ];
 
 export const generateWordSet = async () => {
